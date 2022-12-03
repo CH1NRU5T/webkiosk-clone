@@ -18,7 +18,7 @@ const Signin = () => {
 
 	const authHandler = async (event) => {
 		event.preventDefault();
-		const baseUrl = "http://localhost:3001/api/v1/";
+		const baseUrl = "https://webkiosk-clone.anshagrawal4.repl.co/api/v1/";
 		axios
 			.post(baseUrl + "login", { user, pass })
 			.then((res) => {
