@@ -57,7 +57,7 @@ export const Marks = () => {
 
 	useEffect(() => {
 		axios
-			.post("http://localhost:3001/api/v1/marks", {
+			.post("https://webkiosk-clone.anshagrawal4.repl.co/api/v1/marks", {
 				Cookie: auth.cookie,
 			})
 			.then((res) => {
