@@ -38,7 +38,7 @@ export const Attendance = () => {
 	const toggleView = async (event) => {
 		setShow(!show);
 
-		const baseUrl = "http://localhost:3001/api/v1/detailedAttendance";
+		const baseUrl = "https://webkiosk-clone.anshagrawal4.repl.co/api/v1/detailedAttendance";
 		axios
 			.post(baseUrl, {
 				Cookie: auth.cookie,
@@ -60,7 +60,7 @@ export const Attendance = () => {
 	});
 
 	useEffect(() => {
-		const baseUrl = "http://localhost:3001/api/v1/attendance";
+		const baseUrl = "https://webkiosk-clone.anshagrawal4.repl.co/api/v1/attendance";
 		axios
 			.post(baseUrl, { Cookie: auth.cookie })
 			.then((res) => {
